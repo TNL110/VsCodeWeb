@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital@1&display=swap');
+/* 
+line-height : line spacing
+letter-spacing : 
+word-spacing : 
+text-transform
+    capitalize : fist letter is uppercase
+text-decoration :       underline
+    none
+    underline
+    line-through
+    overline
+ */
+ /* 
+ margin
+ padding
+ border
+    border-style
+    border-width
+    border-color
+ex: border : 10px solid yellow;
+
+    border-bottom-style
+    ...
+
+    border-radius : the edges around
+    ex border-radius: 20px;
+
+
+overflow: ;
+ */
+*{
+    margin: 2%;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.out{
+    width: 100vw;
+    /* height: 100vh; */
+    min-height: calc(100vh-100px);
+    background-color: aqua;
+}
+
+.in{
+    width: 50%;
+    height: 50%;
+    background-color: darkgreen;
+}
+/* 1em = 16px */
+/* 
+vw - width - percent of the secreen
+vh - height- percent of the secreen
+ */
+h2{
+    color: violet;
+    height: 200px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+#para{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 2rem;
+    text-indent: 50px;
+}
+
+#header{
+    color: blueviolet;
+    background-color: aqua;
+}
+
+.green{
+    color: green;
+}
+
+.red{
+    color: red;
+    background-color: gray;
+}
+
+.lowercase{
+    text-transform: lowercase;
+}
+
+div{
+    color: royalblue;
+    background-color: aqua;
+}
+
+span{
+    text-transform: uppercase;
+}
+
+#end{
+    border: 2px solid black;
+    border-spacing: 25px;
+
+}
+
+@media screen and (min-width: 576px ){
+    body{
+        background-color: aqua;
+    }
+}

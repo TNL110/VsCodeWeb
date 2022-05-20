@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: linear-gradient(90deg, #7d5fff, #7158e2);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: white;
+    display: flex;
+    height: 50px;
+    position: relative;
+}
+
+.input{
+    width: 0px;
+    height: 50px;
+    border: 0;
+    font-size: 1.2rem;
+    outline: none;
+    transition: width 0.4s ease;
+}
+
+.btn{
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    height: 50px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+.container.active .input{
+    width: 200px;
+    padding: 15px;
+}
+
+.container.active .btn{
+    transform: scaleX();
+}

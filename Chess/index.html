@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<!-- color == 1 -> red(top) -->
+<!-- color == 2 -> black(bottom) -->
+<!-- color == -1 -> empty -->
+
+<body onload="creation()">
+  
+  <div class="chess">
+    <div class="main">
+      <div class="player playerLeft">
+        <div class="player1">
+          <img id="PRed" src="User/User_Dis.png" alt="">
+          <h3>Player1</h3>
+        </div>
+      </div>
+      <div class="chessBoard">
+        <table id="chessBoard">
+          <tr>
+            <td id="d11" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i11" /></td>
+            <td id="d12" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i12" /></td>
+            <td id="d13" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i13" /></td>
+            <td id="d14" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i14" /></td>
+            <td id="d15" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i15" /></td>
+            <td id="d16" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i16" /></td>
+            <td id="d17" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i17" /></td>
+            <td id="d18" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i18" /></td>
+          </tr>
+          <tr>
+            <td id="d21" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i21" /></td>
+            <td id="d22" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i22" /></td>
+            <td id="d23" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i23" /></td>
+            <td id="d24" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i24" /></td>
+            <td id="d25" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i25" /></td>
+            <td id="d26" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i26" /></td>
+            <td id="d27" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i27" /></td>
+            <td id="d28" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i28" /></td>
+          </tr>
+          <tr>
+            <td id="d31" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i31" /></td>
+            <td id="d32" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i32" /></td>
+            <td id="d33" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i33" /></td>
+            <td id="d34" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i34" /></td>
+            <td id="d35" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i35" /></td>
+            <td id="d36" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i36" /></td>
+            <td id="d37" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i37" /></td>
+            <td id="d38" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i38" /></td>
+          </tr>
+          <tr>
+            <td id="d41" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i41" /></td>
+            <td id="d42" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i42" /></td>
+            <td id="d43" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i43" /></td>
+            <td id="d44" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i44" /></td>
+            <td id="d45" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i45" /></td>
+            <td id="d46" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i46" /></td>
+            <td id="d47" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i47" /></td>
+            <td id="d48" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i48" /></td>
+          </tr>
+          <tr>
+            <td id="d51" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i51" /></td>
+            <td id="d52" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i52" /></td>
+            <td id="d53" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i53" /></td>
+            <td id="d54" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i54" /></td>
+            <td id="d55" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i55" /></td>
+            <td id="d56" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i56" /></td>
+            <td id="d57" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i57" /></td>
+            <td id="d58" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i58" /></td>
+          </tr>
+          <tr>
+            <td id="d61" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i61" /></td>
+            <td id="d62" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i62" /></td>
+            <td id="d63" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i63" /></td>
+            <td id="d64" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i64" /></td>
+            <td id="d65" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i65" /></td>
+            <td id="d66" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i66" /></td>
+            <td id="d67" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i67" /></td>
+            <td id="d68" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i68" /></td>
+          </tr>
+          <tr>
+            <td id="d71" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i71" /></td>
+            <td id="d72" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i72" /></td>
+            <td id="d73" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i73" /></td>
+            <td id="d74" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i74" /></td>
+            <td id="d75" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i75" /></td>
+            <td id="d76" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i76" /></td>
+            <td id="d77" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i77" /></td>
+            <td id="d78" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i78" /></td>
+          </tr>
+          <tr>
+            <td id="d81" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i81" /></td>
+            <td id="d82" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i82" /></td>
+            <td id="d83" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i83" /></td>
+            <td id="d84" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i84" /></td>
+            <td id="d85" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i85" /></td>
+            <td id="d86" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i86" /></td>
+            <td id="d87" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i87" /></td>
+            <td id="d88" onclick="Click(this.id)" data-color="-1" data-name=""><img id="i88" /></td>
+          </tr>
+        </table>
+      </div>
+      <div class="player playerRight">
+        <div class="player2">
+          <img id="PBlack" src="User/User_Enb.png" alt="">
+          <h3>Player2</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script src="Piece/Bishop.js"></script>
+  <script src="Piece/King.js"></script>
+  <script src="Piece/Knight.js"></script>
+  <script src="Piece/Pawn.js"></script>
+  <script src="Piece/Queen.js"></script>
+  <script src="Piece/Rook.js"></script>
+  <script src="asset.js"></script>
+  <script src="Function.js"></script>
+  <script src="createBoard.js"></script>
+  <script src="action.js"></script>  
+</body>
+
+</html>

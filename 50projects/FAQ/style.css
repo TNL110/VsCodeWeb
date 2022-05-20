@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h3{
+    font-weight: bold;
+    font-size: 1.17rem;
+}
+
+body{
+    background-color: #f0f0f0;
+    font-family: 'Muli', sans-serif;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.container{
+    margin-top: 50px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container h1{
+    margin-bottom: 30px;
+}
+
+.container .question-item{
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: 1px solid #999;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    position: relative;
+    transition: 0.3s ease;
+}
+
+.container .question-item .ques{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .question-item .ans{
+    margin-top: 30px;
+    display: none;
+}
+
+.container .question-item .btn{
+    border: none;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+ion-icon {
+    --ionicon-stroke-width: 80px;
+}
+
+.btn ion-icon:nth-child(2){
+    display: none;
+}
+
+.question-item.active{
+    background-color: #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.question-item.active::before,
+.question-item.active::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f075";
+    color: #2ecc71;
+    font-size: 7rem;
+    position: absolute;
+    opacity: 0.2;
+    top: 20px;
+    left: 20px;
+    z-index: 0;
+}
+
+.question-item.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.question-item.active .ans{
+    display: inline;
+}
+
+.question-item.active .ques .btn{
+    background-color: #9fa4a8;
+    color: #fff;
+}
+
+.question-item.active .btn ion-icon:nth-child(1){
+    display: none;
+}
+
+.question-item.active .btn ion-icon:nth-child(2){
+    display: inline;
+}
+
+

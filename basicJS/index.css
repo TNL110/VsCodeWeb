@@ -1,0 +1,21 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+button{
+    background-color: #eee;
+    width: 200px;
+    margin: auto;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    margin-bottom: 10px;
+}
+
+button:active{
+    border: 2px solid white;
+    /* padding: 8px 18px; */
+}

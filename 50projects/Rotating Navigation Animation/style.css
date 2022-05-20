@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: #333;
+    color: #222;
+    overflow-x: hidden;
+}
+
+.container{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: transform 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* transform: rotate(-20deg); */
+}
+
+.circle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+
+.circle{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: transform 0.5s linear;
+    /* transform: rotate(-90deg); */
+    /* transform: rotate(-70deg); */
+}
+
+.circle button{
+    position: absolute;
+    background-color: transparent; 
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    border: none;
+    cursor: pointer;
+    /* z-index: ; */
+    
+}
+
+.circle button ion-icon{
+    font-size: 2.5rem;
+    font-weight: 900;
+    color: #fff;
+}
+
+.circle button#open{
+    left: 60%;
+}
+
+.circle button#close{
+    top: 45%;
+    left: 17%;
+    transform-origin: top left;
+}
+
+.container.show-nav{
+    transform: rotate(-20deg);
+}
+
+.container.show-nav .circle{
+    transform: rotate(-70deg);
+}
+
+.container.show-nav + nav li{
+    transform: translateX(0);
+    transition-delay: 0.2s;
+}
+
+nav{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+nav ul{
+    text-transform: uppercase;
+    color: #fff;
+    list-style-type: none;
+    margin-left: 30px;
+}
+
+nav ul li{
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    transform: translateX(-200%);
+    transition: transform 0.4s ease-in;
+}
+
+nav ul li ion-icon{
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+nav ul li:nth-child(2){
+    margin-left: 20px;
+}
+
+nav ul li:nth-child(3){
+    margin-left: 40px;
+}
+
+.content{
+    max-width: 1000px;
+    margin-top: 50px;
+
+}
+
+.content img{
+    width: 100%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+.content p{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    line-height: 1.5;
+}

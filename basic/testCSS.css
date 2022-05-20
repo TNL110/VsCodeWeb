@@ -1,0 +1,110 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+#head{
+    background-color: red;
+    padding: 1rem;
+    border: 00.2rem solid black;
+    margin: 3rem;
+    border-bottom: dashed;
+}
+
+#text{
+    background-color: aqua;
+    padding: 3rem;
+    margin: 3rem;
+    margin-top: 10px;
+    border: 0.2rem solid black;
+    border-radius:50%;
+}
+
+
+
+/* 
+display: none;  k hien thi
+opacity: 1; hien thi
+opacity: 0.5; mowf di
+opacity: 0; k hien thi
+
+visibility: ;
+*/
+
+.block{
+    background-color: blue;
+    margin: 3rem;
+    /* margin-bottom: 5rem; */
+    padding: 1rem;
+    color: white;
+    display: inline;
+    text-align: center;
+    width: 50px;
+}
+
+.inline{
+    background-color: red;
+    display: block;
+    margin: 1rem;
+}
+
+ul li{
+    list-style-type: none;
+}
+
+ul li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    background-color: green;
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    opacity: 0.7;
+}
+
+/* --------------------- */
+
+.banner{
+    border: 5px solid black;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.one{
+    float: left;
+    margin: 20px;
+}
+
+/*
+note:
+clear: both;  
+top: ;
+bottom:  ;
+left: ;
+right: ; 
+ */
+ 
+/* ------------------------- */
+
+.box-1,.box-2,.box-3{
+    width: 200px;
+    height: 200px;
+    color: white;
+}
+
+.box-1{
+    background-color: red;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.box-2{
+    background-color: blue;
+}
+
+.box-3{
+    background-color: green;
+    padding: 20px;
+}

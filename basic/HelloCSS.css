@@ -1,0 +1,95 @@
+*{
+    box-sizing: border-box;
+}
+
+#buttons{
+    margin: 3rem;
+}
+
+a{
+    background-color: green;
+    padding: 1rem 3rem;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+/* background: url(); */
+div{
+    height: 600px;
+    color: red;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.big-img{
+    background: url(./images/2.jpg);
+    background-repeat: round;
+
+    background-attachment: fixed;
+}
+
+.small-img{
+    background: url(./images/power.jpg);
+    /* background-repeat: inherit; */
+    /* background-repeat: space; */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    background-attachment: fixed;
+}
+
+.folder-img{
+    background: url(./images/1.jpg);
+    /* background-size: cover; */
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+
+    background-position: center;
+    background-position: 50px 50px;
+
+    border: 0.2rem solid black;
+
+    background-attachment: fixed;
+}
+
+.foot-img{
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(./images/power.jpg) center/cover fixed no-repeat;
+}
+
+/*  */
+
+/* 
+background: linear-gradient(...);
+*/
+
+#one{
+    border: 0.2rem solid black;
+}
+
+#two{
+    outline-width: 0.2rem;
+    outline-style: solid;
+    outline-color: black;
+    outline: 00.2rem solid black;
+    outline-offset: 10px;
+    outline-offset: -10px;
+}
+
+/* .navbar{
+    background-color: blue;
+    font-size: 30px;
+    height: 100px;
+    color: white;
+    font-family: 'Almendra Display', cursive;
+}
+
+.banner{
+    background-color: red;
+    min-height: calc(100vh - 100px);
+} */

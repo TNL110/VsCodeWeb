@@ -1,0 +1,145 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 20px;
+}
+
+.cards{
+  --spacing: 25px;
+  --column: 4;
+  display: flex;
+  flex-wrap: wrap ;
+  margin-left: calc(-1 * var(--spacing));
+}
+
+@media screen and (max-width: 1023px) {
+  .cards{
+    --column: 2;
+  }
+}
+@media screen and (max-width: 767px) {
+  .cards{
+    --spacing: 15px;
+    --column: 1;
+  }
+}
+
+.card{
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: rgba(100, 100, 111, 0.2) 0 7px  29px 0;
+  width: calc(calc(100% / var(--column)) - var(--spacing));
+  margin-left: var(--spacing);
+  margin-bottom: var(--spacing);
+}
+
+.card-img{
+  height: 300px;
+  width: 100%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.card-top{
+  padding: 25px;
+}
+
+.card-title{
+  font-weight: 300;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+.card-user{
+  display: flex;
+  margin-top: 20px;
+}
+
+.card-user-avatar{
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  object-fit: cover;
+}
+
+.card-user-inf{
+  display: flex;
+  flex-direction: column;
+}
+
+.card-user-top{
+  display: flex;
+  align-items: center;
+}
+
+.card-user-name{
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.card-user-top ion-icon{
+  color: #20e3b2;
+  margin-left: 10px;
+}
+
+.card-user-game{
+  font-weight: 300;
+  font-size: 16px;
+  color: #999;
+}
+
+.card-bottom{
+  border-top: 2px solid #ccc;
+  padding: var(--spacing);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-live{
+  background-color: #ff6651;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.card-live span{
+  padding-left: 5px;
+  font-size: 14px;
+}
+
+.card-wacthing{
+  font-weight: 300;
+  font-size: 16px;
+  color: #999;
+}
+
+.card-content{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-top{
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.card-user,
+.card-bottom{
+  margin-top: auto;
+  flex-shrink: 0;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+}

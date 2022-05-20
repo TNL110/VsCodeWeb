@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <picture>
+        <source media="(min-width:650px)" srcset="/images/2.jpg">
+        <source media="(min-width:465px)" srcset="/images/3.jpg">
+        <img src="/images/1.png" alt="Flowers" style="width:auto;">
+    </picture>
+    <form action="#">
+        <fieldset>
+            <legend>Favorites</legend>
+            <div>
+                <label for="#">Color</label>
+            </div>
+            <div>
+                <!-- <input type="text" list="color-list"> -->
+                <!-- <input type="color"> -->
+                <!-- <input type="time" name="" id=""> -->
+                <progress value="50" max="100"></progress>
+                <datalist id="color-list">
+                    <option value="Red">
+                    <option value="Green">
+                    <option value="Blue">
+                    <option value="Yellow">
+                    <option value="Black">
+                    <option value="White">
+                    <option value="Purple">
+                    <option value="Cyan">
+                    <option value="Pink">
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="#">Fruit</label>
+            </div>
+            <div>
+                <input type="text" list="fruit-list">
+                <datalist id="fruit-list">
+                    <option value="Banana">
+                    <option value="Strawberry">
+                </datalist>
+            </div>
+        </fieldset>
+    </form>
+</body>
+
+</html>

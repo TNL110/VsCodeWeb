@@ -1,0 +1,132 @@
+
+
+/* img{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+.banner{
+    margin: 20px;
+    width: 70vw;
+    height: 80vh;
+    border: 2px solid red;
+    position: relative;
+}
+
+.one{
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transform: rotate(45deg); //xoay
+}
+
+.two{
+    top: 10%;
+    left: 10%;
+    z-index: 2;
+    transform: scale(1.5, 1.5); // zoom
+}
+
+.three{
+    top: 20%;
+    left: 20%;
+    z-index: 0;
+    transform: translate(50px, 5zpx); // dich chuyen
+    transform: skewX(20deg); // 
+} */
+
+p::before{
+    content: "hello ";
+    color: red;
+    font-size: 2rem;
+    display: block;
+    background-color: aqua;
+}
+
+p::after{
+    content: " ";
+    color: red;
+    font-size: 2rem;
+    width: 50px;
+    height: 50px;
+    display: block;
+    background-color: aqua;
+}
+
+.divCt{
+    width: 60vw;
+    margin: 100px auto;
+    border: 2px solid black;
+    position: relative;
+}
+
+.imgCt{
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.divCt::before{
+    content: " ";
+    border: 2px solid brown;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -40px;
+    left: -40px;
+    z-index: -1;
+}
+
+.divCt::after{
+    content: " ";
+    border: 2px solid brown;
+    background-color: gray;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+}
+
+.divCt:hover::after,
+.divCt:hover::before{
+    top: 0;
+    left: 0;
+}
+a{
+    font-size: 2rem;
+}
+
+a:link{
+    color: aqua;
+}
+
+a:visited{
+    color: red;
+}
+
+a:hover{
+    color: green;
+}
+
+a:active{
+    color: gray;
+}
+
+.trans{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    transition-property: background,
+    border-radius;
+    transition-duration: 4s, 1s;
+    transition-delay: 3s;
+    /* transform: background (duration), border-radius 5s 1s; */
+    /* transition: all 4s 5s; */
+}
+
+.trans:hover{
+    border-radius: 50%;
+}
